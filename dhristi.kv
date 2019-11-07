@@ -1,5 +1,9 @@
 #:import get_color_from_hex kivy.utils.get_color_from_hex
 <deepak>:
+    name : name
+    email : email
+    number : number
+    orga : orga
     cols: 1
     Accordion:
         orientation: 'vertical'
@@ -8,168 +12,196 @@
             title: 'Donation'
             GridLayout:
                 cols: 1
-                GridLayout:
-                    cols: 2
-                    padding: 50
+                padding:[0,0,0,10]                
+                BoxLayout:
+                    orientation: 'vertical'
+                    padding:[0,0,0,20]                
 
+                    
                     Label:
                         text: 'Name'
                         color: get_color_from_hex("#000000")
-                        font_size: 15
+                        font_size: 50
                         font_name: 'deepak1.ttf'
 
 
                     TextInput:
                         multiline: False
-                        id: name
-                        font_size: 15
-                        font_name: 'deepak1.ttf'
+                        id: name1
+                        size_hint: (None, None)
+                        size: (root.width, 50)
+                        font_size: 40
+                       
 
 
                     Label:
                         text: 'Email'
                         color: get_color_from_hex("#000000")
-                        font_size: 15
+                        font_size: 50
                         font_name: 'deepak1.ttf'
 
 
                     TextInput:
                         multiline: False
                         id: email
-                        font_size: 15
-                        font_name: 'deepak1.ttf'
+                        size_hint: (None, None)
+                        size: (root.width, 50)
+                        font_size: 40
+                        
 
 
                     Label:
                         text: 'Address'
                         color: get_color_from_hex("#000000")
-                        font_size: 15
+                        font_size: 50
+
                         font_name: 'deepak1.ttf'
 
 
                     TextInput:
                         multiline: False
                         id: Address
-                        font_size: 15
-                        font_name: 'deepak1.ttf'
+                        size_hint: (None, None)
+                        size: (root.width, 50)
+                        font_size: 40
+                       
 
                     Label:
                         text: 'Number'
                         color: get_color_from_hex("#000000")
-                        font_size: 15
+                        font_size: 50
                         font_name: 'deepak1.ttf'
 
 
                     TextInput:
                         multiline: False
                         id: Number
-                        font_size: 15
-                        font_name: 'deepak1.ttf'
+                        size_hint: (None, None)
+                        size: (root.width, 50)
+                        font_size: 40
+                       
 
                     Label:
                         text: 'Organisation'
                         color: get_color_from_hex("#000000")
-                        font_size: 15
+                        font_size: 50
                         font_name: 'deepak1.ttf'
 
 
                     TextInput:
                         multiline: False
                         id: organisation
-                        font_size: 15
-                        font_name: 'deepak1.ttf'
+                        size_hint: (None, None)
+                        size: (root.width, 50)
+                        font_size: 40
+                       
 
                     Label:
                         text: 'Clothes'
                         color: get_color_from_hex("#000000")
-                        font_size: 15
+                        font_size: 50
                         font_name: 'deepak1.ttf'
 
 
                     TextInput:
                         multiline: False
                         id: Clothes
-                        font_size: 15
-                        font_name: 'deepak1.ttf'
+                        font_size: 40
+                        size_hint: (None, None)
+                        size: (root.width, 50)
+                        
 
 
                     
                 Button:
                     text: 'Donate'
+                    
                     size_hint: (None, None)
-                    size: (root.width, 50)
-                    font_size: 20
+                    size: (root.width, 100)
+                    font_size: 30
                     font_name: 'deepak1.ttf'
                     background_color: get_color_from_hex("#17b9ff")
+
 
         AccordionItem:
             title: 'JoinUs'
             GridLayout:
                 cols: 1
-                GridLayout:
-                    cols: 2
-                    padding: 50
+                padding:[0,0,0,10]                
+                BoxLayout:
+                    orientation: 'vertical' 
+                    padding:[0,0,0,20]                             
+                    
 
                     Label:
                         text: 'Name'
                         color: get_color_from_hex("#000000")
-                        font_size: 15
+                        font_size: 50
                         font_name: 'deepak1.ttf'
 
 
                     TextInput:
                         multiline: False
                         id: name
-                        font_size: 15
-                        font_name: 'deepak1.ttf'
+                        size_hint: (None, None)
+                        size: (root.width, 70)
+                        font_size: 40
+                       
 
 
                     Label:
                         text: 'Email'
                         color: get_color_from_hex("#000000")
-                        font_size: 15
+                        font_size: 50
                         font_name: 'deepak1.ttf'
 
 
                     TextInput:
                         multiline: False
                         id: email
-                        font_size: 15
-                        font_name: 'deepak1.ttf'
+                        size_hint: (None, None)
+                        size: (root.width, 70)
+                        font_size: 40
+                        
 
 
                     Label:
                         text: 'Number'
                         color: get_color_from_hex("#000000")
-                        font_size: 15
+                        font_size: 50
                         font_name: 'deepak1.ttf'
 
 
                     TextInput:
                         multiline: False
                         id: number
-                        font_size: 15
-                        font_name: 'deepak1.ttf'
+                        size_hint: (None, None)
+                        size: (root.width, 70)
+                        font_size:40
+                       
 
                     Label:
                         text: 'Organisation'
                         color: get_color_from_hex("#000000")
-                        font_size: 15
+                        font_size: 50
                         font_name: 'deepak1.ttf'
 
 
                     TextInput:
                         multiline: False
                         id: orga
-                        font_size: 15
-                        font_name: 'deepak1.ttf'
+                        size_hint: (None, None)
+                        size: (root.width, 70)
+                        font_size: 40
+                        
 
 
                     
                 Button:
                     text: 'Join Us'
                     size_hint: (None, None)
-                    size: (root.width, 50)
+                    on_press:root.btn()
+                    size: (root.width, 100)
                     font_size: 20
                     font_name: 'deepak1.ttf'
                     background_color: get_color_from_hex("#17b9ff")
