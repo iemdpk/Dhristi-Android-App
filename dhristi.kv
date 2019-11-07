@@ -1,0 +1,226 @@
+#:import get_color_from_hex kivy.utils.get_color_from_hex
+<deepak>:
+    cols: 1
+    Accordion:
+        orientation: 'vertical'
+
+        AccordionItem:
+            title: 'Donation'
+            GridLayout:
+                cols: 1
+                GridLayout:
+                    cols: 2
+                    padding: 50
+
+                    Label:
+                        text: 'Name'
+                        color: get_color_from_hex("#000000")
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    TextInput:
+                        multiline: False
+                        id: name
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    Label:
+                        text: 'Email'
+                        color: get_color_from_hex("#000000")
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    TextInput:
+                        multiline: False
+                        id: email
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    Label:
+                        text: 'Address'
+                        color: get_color_from_hex("#000000")
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    TextInput:
+                        multiline: False
+                        id: Address
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+                    Label:
+                        text: 'Number'
+                        color: get_color_from_hex("#000000")
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    TextInput:
+                        multiline: False
+                        id: Number
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+                    Label:
+                        text: 'Organisation'
+                        color: get_color_from_hex("#000000")
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    TextInput:
+                        multiline: False
+                        id: organisation
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+                    Label:
+                        text: 'Clothes'
+                        color: get_color_from_hex("#000000")
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    TextInput:
+                        multiline: False
+                        id: Clothes
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    
+                Button:
+                    text: 'Donate'
+                    size_hint: (None, None)
+                    size: (root.width, 50)
+                    font_size: 20
+                    font_name: 'deepak1.ttf'
+                    background_color: get_color_from_hex("#17b9ff")
+
+        AccordionItem:
+            title: 'JoinUs'
+            GridLayout:
+                cols: 1
+                GridLayout:
+                    cols: 2
+                    padding: 50
+
+                    Label:
+                        text: 'Name'
+                        color: get_color_from_hex("#000000")
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    TextInput:
+                        multiline: False
+                        id: name
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    Label:
+                        text: 'Email'
+                        color: get_color_from_hex("#000000")
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    TextInput:
+                        multiline: False
+                        id: email
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    Label:
+                        text: 'Number'
+                        color: get_color_from_hex("#000000")
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    TextInput:
+                        multiline: False
+                        id: number
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+                    Label:
+                        text: 'Organisation'
+                        color: get_color_from_hex("#000000")
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    TextInput:
+                        multiline: False
+                        id: orga
+                        font_size: 15
+                        font_name: 'deepak1.ttf'
+
+
+                    
+                Button:
+                    text: 'Join Us'
+                    size_hint: (None, None)
+                    size: (root.width, 50)
+                    font_size: 20
+                    font_name: 'deepak1.ttf'
+                    background_color: get_color_from_hex("#17b9ff")
+
+
+
+        AccordionItem:
+            title: 'Home'
+            ScrollView:
+                GridLayout:
+                    size_hint_y: None
+                    cols: 1
+                    row_default_height:root.height
+                    height:self.minimum_height
+                    Image:
+                        source: 'picture.jpg'
+                        size_hint: (None, None)
+                        size: (root.width, root.height)
+
+                    PageLayout:
+                        Button:
+                            text: 'Who We Are'
+                            font_name: 'deepak1.ttf'
+                            font_size: 40
+                            size_hint: (None, None)
+                            size: (root.width, 500)
+                            background_color: get_color_from_hex('#40e0d0')
+
+                        Button:
+                            text: 'Why You Donate Us'
+                            font_name: 'deepak1.ttf'
+                            font_size:40
+                            size_hint: (None, None)
+                            size: (root.width, 500)
+                            background_color: get_color_from_hex('#40e0d0')
+
+                    PageLayout:
+
+                        Button:
+                            text: 'We are Students and we have clothes many stuffs many thing.Which are Useless for us We throw it,We have an Idea Why should not We Donate It SomeWhere'
+                            font_size:50
+                            background_color: get_color_from_hex('#84b3e7')
+                            width: root.width
+                            size_hint: (None, None)
+                            text_size: (self.width, None)
+                        Button:
+                            text: 'We have taken a responsibility to make a smile on their face as wecan.To expand our organization and help the needy people, we request you to make some contribution to the organization by giving your old things for second chance. To carry forward our ambitious mission to make our country a better place. We request you to help us by donation. Any little step for donation is welcomed and we will be highly honored and obliged for the support you have offered.'   
+                            font_size: 30
+                            width: root.width
+                            size_hint: (None, None)
+                            text_size: (self.width,450)
+                            background_color: get_color_from_hex('#84b3e7')
+
+                        
