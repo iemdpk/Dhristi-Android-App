@@ -4,7 +4,4 @@ sudo zipalign -v -p 4 Dhristi-0.1-armeabi-v7a-release-unsigned.apk Dhristi-0.1-a
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore deepak1824.keystore Dhristi-0.1-armeabi-v7a-release-unsigned.apk deepak
 
 
-keytool -genkey -v -keystore deepak1824.keystore -alias deepak -storepass deepak1824 -keypass YOUR_ALIAS_PWD -keyalg RSA -validity 36500
-
-
-
+keytool -genkey -alias ftpKey -keystore privateKey.store
